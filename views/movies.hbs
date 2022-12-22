@@ -1,0 +1,11 @@
+<div class = "first-title-all-movies">
+  <h2>Ironhack Cinema</h2>
+  <p>Click on the movie to see showtimes</p>
+</div>
+<div class="first-container-all-movies">
+  {{#each movies}}
+    <div class = "container-for-movie">
+      {{> cardMovies this}}
+    </div>
+  {{/each}}
+</div>

@@ -1,8 +1,147 @@
+/*---------GENERAL-------------*/
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 16px "Lucida Grande", Helvetica, Arial, sans-serif;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+h1 {
+  font-size: 7rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.3rem;
+}
+
+h4 {
+  font-size: 1.1rem;
 }
 
 a {
   color: #00B7FF;
+}
+
+/*---------HOME-------------*/
+.home-background {
+  margin:0;
+  background-image: url('../images/cinema.jpg');
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end
+}
+
+.title-container {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 25rem;
+  padding: 5rem 15rem 0 0;
+}
+
+.home-background h1 {
+  flex-wrap: wrap;
+  padding-bottom: 2rem;
+  color: white;
+  font-weight: 900;
+}
+
+.home-background button {
+  border: none;
+  background-color: white;
+  border-radius: 40px;
+  padding: 1.3rem 2.5rem;
+}
+
+.home-background button:hover {
+  background-color: #dd3c51;
+}
+
+.home-background button a {
+  text-decoration: none;
+  color:rgb(37, 112, 219);
+  font-size: 1rem;
+}
+
+.home-background button a:hover{
+  color:white;
+}
+
+/*---------ALL MOVIES-------------*/
+.first-title-all-movies {
+  padding: 2rem 0 3rem 3rem;
+}
+
+.first-title-all-movies h2 {
+  padding-bottom: 1rem;
+  font-weight: 900;
+}
+
+.movie-title-all {
+  padding: 1rem 0 1.1rem 0;
+}
+
+.see-more {
+  padding-bottom: 3rem;
+}
+
+.first-container-all-movies{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container-for-movie{
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-movie {
+  width: 150px;
+  box-shadow: 0px 4px 5px #bfbfbf;
+}
+
+/*---------MOVIE DETAILS-------------*/
+
+.details-container {
+  display: flex;
+  padding: 2rem;
+}
+
+.img-container-details {
+  padding-right: 2rem;
+}
+
+.img-movie-details {
+  width: 240px;
+  box-shadow: 0px 4px 5px #bfbfbf;
+}
+
+.details-info-movie {
+  width: 50rem;
+}
+
+.details-info-movie h2{
+  padding: 1.3rem 0;
+  font-weight: 900;
+}
+
+.details-info-movie h4 {
+  padding: 1.3rem 0 0 0;
+}
+
+.details-info-movie ul {
+  list-style: inside;
+  padding: 1.3rem 0;
+}
+
+.details-info-movie .description {
+  padding-bottom: 1.3rem;
 }
